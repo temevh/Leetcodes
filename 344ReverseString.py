@@ -1,11 +1,6 @@
+# Passing, runtime 164ms, beats 87%
 def reverseString(s):
-    toReturn = [0] * len(s)
-    index = 0
-    for i in reversed(s):
-        toReturn[index] = i
-        index += 1
-
-    return toReturn
+    s[:] = s[::-1]
 
 
 s = ["h", "e", "l", "l", "o"]
