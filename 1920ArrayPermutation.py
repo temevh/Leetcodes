@@ -1,5 +1,8 @@
 def buildArray(nums):
-    pass
+    ans = [0] * len(nums)
+    for i in nums:
+        ans[i] = nums[nums[i]]
+    return ans
 
 
 nums = [0, 2, 1, 5, 3, 4]
