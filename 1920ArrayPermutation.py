@@ -1,3 +1,4 @@
+# PASSED, runtime 95ms, beats 91%
 def buildArray(nums):
     ans = [0] * len(nums)
     for i in nums:
