@@ -1,4 +1,4 @@
-#PASSING, beats 33% in runtime(55ms)
+#PASSING, beats 88% in runtime(27ms)
 def runningSum(nums):
     sum = 0
     arr = []
