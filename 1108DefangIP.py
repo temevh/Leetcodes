@@ -1,3 +1,4 @@
+#PASSING, beats 75% in runtime(22ms)
 def defangIPaddr(address):
     x = ""
     for letter in address:
