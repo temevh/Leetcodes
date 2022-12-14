@@ -1,11 +1,8 @@
-# PASSING, beats 94% in runtime(16ms)
+# PASSING, beats 92% in runtime(16ms)
 def numJewelsInStones(jewels, stones):
-    jewArr = []
     matches = 0
-    for letter in jewels:
-        jewArr.append(letter)
     for letter in stones:
-        if letter in jewArr:
+        if letter in list(jewels):
             matches += 1
 
     return matches
