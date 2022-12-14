@@ -1,10 +1,9 @@
+# PASSING, beats 95% in runtime (35ms)
 def maximumWealth(accounts):
     biggest = 0
-    biggestAcc = 0
     for elem in accounts:
         if sum(elem) >= biggest:
             biggest = sum(elem)
-            #biggestAcc = accounts.index(elem)
 
     return biggest
 
