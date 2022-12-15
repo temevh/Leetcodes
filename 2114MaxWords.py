@@ -1,5 +1,9 @@
+# PASSING, beats 99.87% in runtime(15ms)
 def mostWordsFound(sentences):
-    pass
+    m = 0
+    for s in sentences:
+        m = max(m, len(s.split()))
+    return m
 
 
 sentences = ["alice and bob love leetcode",
