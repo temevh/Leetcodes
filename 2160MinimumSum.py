@@ -1,3 +1,4 @@
+# PASSING, beats 94% in runtime(15ms)
 def minimumSum(num):
     arr = [int(x) for x in str(num)]
     arr.sort()
