@@ -1,3 +1,4 @@
+#PASSING, beats 63% in runtime(222ms)
 def smallerNumbersThanCurrent(nums):
     arr =[0] * len(nums)
     ctr = 0
