@@ -1,5 +1,6 @@
 def countValidWords(sentence):
-    pass
+    for word in sentence.split():
+        print(word)
 
 
 print(countValidWords("cat and  dog"))
