@@ -3,19 +3,21 @@
 #Dictionary jossa jokainen numero ja määrä -> poistetaan vaan k "harvinaisimmat"
 
 def findLeastNumOfUniqueInts(arr, k):
-    dict = {}
+    nums = {}
     for i in range(len(arr)):
-        if (arr[i] in dict):
-            dict[arr[i]] += 1
+        if (arr[i] in nums):
+            nums[arr[i]] += 1
         else:
-            dict[arr[i]] = 1
+            nums[arr[i]] = 1
 
-    print(dict)
+    sortedDict = dict(sorted(nums.items(), key=lambda item: item[1]))
+    least = []
+    for i in range(k): 
+        least.append(next(iter(sortedDict)))
+        del sortedDict[next(iter(sortedDict))] 
+        
+    return len(least)
 
-    amount = 0
-    return amount
-
-
-arr = [5,5,4]
-k = 1
+arr = [4,3,1,1,3,3,2]
+k = 3
 print(findLeastNumOfUniqueInts(arr,k))
