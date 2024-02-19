@@ -9,12 +9,15 @@ def findLeastNumOfUniqueInts(arr, k):
             nums[arr[i]] += 1
         else:
             nums[arr[i]] = 1
-
+    print("nums length", len(nums))
     sortedDict = dict(sorted(nums.items(), key=lambda item: item[1]))
     least = []
+    #print(sortedDict)
     for i in range(k): 
         least.append(next(iter(sortedDict)))
         del sortedDict[next(iter(sortedDict))] 
+        print("least", least)
+        print("sortedDict", sortedDict)
         
     return len(least)
 
